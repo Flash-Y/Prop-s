@@ -10,10 +10,19 @@ const App = () => {
             <button>SAVE <Bookmark /> </button>
           </div>
           <div className="center">
-
+              <h3>Google <span>30 days ago</span></h3>
+              <h2>Senior UI/UX designer</h2>
+              <div>
+                <h4>Full-Time</h4>
+                <h4>Snenior Level</h4>
+              </div>
           </div>
           <div className="buttom">
-
+              <div>
+                <h3>$230/hr</h3>
+                <p>Kathmandu, Nepal</p>
+              </div>
+              <button>Apply now</button>
           </div>
         </div>
 
