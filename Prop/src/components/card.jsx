@@ -11,7 +11,7 @@ const card = (props) => {
           </div>
           <div className="center">
               <h3>{props.company} <span>30 days ago</span></h3>
-              <h2>Senior UI/UX designer</h2>
+              <h2>{props.role}</h2>
               <div>
                 <h4>Full-Time</h4>
                 <h4>Snenior Level</h4>
