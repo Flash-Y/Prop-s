@@ -17,6 +17,11 @@ body {
   min-height: 100vh;
   background-color: #000;
   padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 /* CARD */
