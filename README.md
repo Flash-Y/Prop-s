@@ -54,6 +54,9 @@ Props/
 │   │   ├── App.css
 │   │   ├── index.css
 │   │   └── main.jsx
+│   │   ├── components/
+│   │   ├── Array.jsx
+│   │   └──  card.jsx
 │   │
 │   ├── index.html
 │   ├── package.json
