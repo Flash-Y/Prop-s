@@ -1,6 +1,7 @@
 import React from 'react'
 import {Bookmark} from 'lucide-react'
 import Card from './components/card'
+import Array from './components/Array'
 
 const App = () => {
   return (
