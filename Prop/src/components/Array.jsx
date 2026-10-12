@@ -24,7 +24,11 @@ const Array = () => {
     }
   ]
 
-  
+    arr.forEach(function(elem){
+      console.log(elem.user); //to get user only
+      console.log(elem.age); //to get age only
+    })
+
   return (
     <div>
       
