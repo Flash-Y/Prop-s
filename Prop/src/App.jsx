@@ -4,14 +4,119 @@ import Card from './components/card'
 import Array from './components/Array'
 
 const App = () => {
+
+  
+const jobs = [
+  {
+    brandLogo: "https://www.google.com/favicon.ico",
+    companyName: "Google",
+    datePosted: "2 days ago",
+    location: "Mumbai, India",
+    pay: "$18/hr",
+    post: "UI/UX Designer",
+    tag1: "Full-time",
+    tag2: "Junior Level",
+  },
+  {
+    brandLogo: "https://www.microsoft.com/favicon.ico",
+    companyName: "Microsoft",
+    datePosted: "3 days ago",
+    location: "Mumbai, India",
+    pay: "$35/hr",
+    post: "Software Engineer",
+    tag1: "Full-time",
+    tag2: "Senior Level",
+  },
+  {
+    brandLogo: "https://www.adobe.com/favicon.ico",
+    companyName: "Adobe",
+    datePosted: "1 day ago",
+    location: "Mumbai, India",
+    pay: "$22/hr",
+    post: "Frontend Developer",
+    tag1: "Full-time",
+    tag2: "Junior Level",
+  },
+  {
+    brandLogo: "https://www.figma.com/favicon.ico",
+    companyName: "Figma",
+    datePosted: "5 days ago",
+    location: "Mumbai, India",
+    pay: "$25/hr",
+    post: "Product Designer",
+    tag1: "Part-time",
+    tag2: "Mid Level",
+  },
+  {
+    brandLogo: "https://www.atlassian.com/favicon.ico",
+    companyName: "Atlassian",
+    datePosted: "4 days ago",
+    location: "Mumbai, India",
+    pay: "$28/hr",
+    post: "React Developer",
+    tag1: "Full-time",
+    tag2: "Mid Level",
+  },
+  {
+    brandLogo: "https://www.amazon.com/favicon.ico",
+    companyName: "Amazon",
+    datePosted: "6 days ago",
+    location: "Mumbai, India",
+    pay: "$32/hr",
+    post: "Backend Developer",
+    tag1: "Full-time",
+    tag2: "Senior Level",
+  },
+  {
+    brandLogo: "https://www.nvidia.com/favicon.ico",
+    companyName: "NVIDIA",
+    datePosted: "Today",
+    location: "Mumbai, India",
+    pay: "$40/hr",
+    post: "AI/ML Engineer",
+    tag1: "Full-time",
+    tag2: "Senior Level",
+  },
+  {
+    brandLogo: "https://www.spotify.com/favicon.ico",
+    companyName: "Spotify",
+    datePosted: "2 days ago",
+    location: "Mumbai, India",
+    pay: "$20/hr",
+    post: "Motion Graphics Designer",
+    tag1: "Part-time",
+    tag2: "Junior Level",
+  },
+  {
+    brandLogo: "https://www.salesforce.com/favicon.ico",
+    companyName: "Salesforce",
+    datePosted: "3 days ago",
+    location: "Mumbai, India",
+    pay: "$26/hr",
+    post: "Data Analyst",
+    tag1: "Full-time",
+    tag2: "Mid Level",
+  },
+  {
+    brandLogo: "https://www.netflix.com/favicon.ico",
+    companyName: "Netflix",
+    datePosted: "1 week ago",
+    location: "Mumbai, India",
+    pay: "$24/hr",
+    post: "Video Editor",
+    tag1: "Part-time",
+    tag2: "Junior Level",
+  },
+];
+
+
   return (
       <div className="parent">
 
-        <Card company = "Google" salary="$230/hr" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP0LqqItjj6kjPy2bhfx_Cs3kIqIEesiN8aMbEXoL-zw&s" role="Senior engineer"/>
+        {jobs.map(function(prop){
 
-        <Card company = "Amazon" salary="$130/hr" img="https://imgs.search.brave.com/-QlnopsS72o8z4m37MBvznkKqNpLr4D87VV3CRwrBjU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzk0LzU0LzA3/LzM2MF9GXzI5NDU0/MDcyMl9WSXdTV3ly/VTZxNzgxU2tIV1Ns/elVEWGpmb3VSbGo0/Ny5qcGc" role="Senior Sales Manager"/>
-
-        <Card company = "Adobe" salary="$190/hr" img="https://coursera-university-assets.s3.amazonaws.com/d9/7ac5ee1c0247dab299ec6a8343f16d/Adobe-A-square.png" role="Senior UI/UX"/>
+          return <Card />
+        })}
 
       </div>
       
