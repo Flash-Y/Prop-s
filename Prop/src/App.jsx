@@ -109,7 +109,6 @@ const jobs = [
   },
 ];
 
-
   return (
       <div className="parent">
 
