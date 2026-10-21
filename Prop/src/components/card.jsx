@@ -17,15 +17,15 @@ const card = (props) => {
               <h2>{props.post}</h2>
 
               <div>
-                <h4>Full-Time</h4>
-                <h4>Snenior Level</h4>
+                <h4>{props.tag1}</h4>
+                <h4>{props.tag2}</h4>
               </div>
           </div>
 
           <div className="buttom">
               <div>
-                <h3>{props.salary}</h3>
-                <p>Kathmandu, Nepal</p>
+                <h3>{props.pays}</h3>
+                <p>{props.loct}</p>
               </div>
               <button>Apply now</button>
           </div>
