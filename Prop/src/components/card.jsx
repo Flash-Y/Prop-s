@@ -2,6 +2,7 @@ import React from 'react'
 import {Bookmark} from 'lucide-react'
 
 const card = (props) => {
+  
   return (
     <div className="card">
       <div>
@@ -13,7 +14,7 @@ const card = (props) => {
           
           <div className="center">
               <h3>{props.company} <span>30 days ago</span></h3>
-              <h2>{props.role}</h2>
+              <h2>{props.post}</h2>
 
               <div>
                 <h4>Full-Time</h4>

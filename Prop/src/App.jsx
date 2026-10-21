@@ -1,14 +1,15 @@
 import React from 'react'
 import {Bookmark} from 'lucide-react'
 import Card from './components/card'
-import Array from './components/Array'
+// import Array from './components/Array'
 
 const App = () => {
 
   
+
 const jobs = [
   {
-    brandLogo: "https://www.google.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=google.com&sz=128",
     companyName: "Google",
     datePosted: "2 days ago",
     location: "Mumbai, India",
@@ -18,7 +19,7 @@ const jobs = [
     tag2: "Junior Level",
   },
   {
-    brandLogo: "https://www.microsoft.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128",
     companyName: "Microsoft",
     datePosted: "3 days ago",
     location: "Mumbai, India",
@@ -28,7 +29,7 @@ const jobs = [
     tag2: "Senior Level",
   },
   {
-    brandLogo: "https://www.adobe.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=adobe.com&sz=128",
     companyName: "Adobe",
     datePosted: "1 day ago",
     location: "Mumbai, India",
@@ -38,7 +39,7 @@ const jobs = [
     tag2: "Junior Level",
   },
   {
-    brandLogo: "https://www.figma.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=figma.com&sz=128",
     companyName: "Figma",
     datePosted: "5 days ago",
     location: "Mumbai, India",
@@ -48,7 +49,7 @@ const jobs = [
     tag2: "Mid Level",
   },
   {
-    brandLogo: "https://www.atlassian.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=atlassian.com&sz=128",
     companyName: "Atlassian",
     datePosted: "4 days ago",
     location: "Mumbai, India",
@@ -58,7 +59,7 @@ const jobs = [
     tag2: "Mid Level",
   },
   {
-    brandLogo: "https://www.amazon.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=amazon.com&sz=128",
     companyName: "Amazon",
     datePosted: "6 days ago",
     location: "Mumbai, India",
@@ -68,7 +69,7 @@ const jobs = [
     tag2: "Senior Level",
   },
   {
-    brandLogo: "https://www.nvidia.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128",
     companyName: "NVIDIA",
     datePosted: "Today",
     location: "Mumbai, India",
@@ -78,7 +79,7 @@ const jobs = [
     tag2: "Senior Level",
   },
   {
-    brandLogo: "https://www.spotify.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=spotify.com&sz=128",
     companyName: "Spotify",
     datePosted: "2 days ago",
     location: "Mumbai, India",
@@ -88,7 +89,7 @@ const jobs = [
     tag2: "Junior Level",
   },
   {
-    brandLogo: "https://www.salesforce.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=salesforce.com&sz=128",
     companyName: "Salesforce",
     datePosted: "3 days ago",
     location: "Mumbai, India",
@@ -98,7 +99,7 @@ const jobs = [
     tag2: "Mid Level",
   },
   {
-    brandLogo: "https://www.netflix.com/favicon.ico",
+    brandLogo: "https://www.google.com/s2/favicons?domain=netflix.com&sz=128",
     companyName: "Netflix",
     datePosted: "1 week ago",
     location: "Mumbai, India",
@@ -109,12 +110,14 @@ const jobs = [
   },
 ];
 
+
+
   return (
       <div className="parent">
 
-        {jobs.map(function(prop){
+        {jobs.map(function(com){
 
-          return <Card />
+          return <Card company={com.companyName} post={com.post}/>
         })}
 
       </div>
