@@ -13,7 +13,7 @@ const card = (props) => {
           </div>
           
           <div className="center">
-              <h3>{props.company} <span>30 days ago</span></h3>
+              <h3>{props.company} <span>{props.date}</span></h3>
               <h2>{props.post}</h2>
 
               <div>

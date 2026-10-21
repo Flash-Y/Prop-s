@@ -117,7 +117,7 @@ const jobs = [
 
         {jobs.map(function(com){
 
-          return <Card company={com.companyName} post={com.post}/>
+          return <Card company={com.companyName} post={com.post} date={com.datePosted} img={com.brandLogo} />
         })}
 
       </div>
