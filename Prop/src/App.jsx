@@ -115,9 +115,11 @@ const jobs = [
   return (
       <div className="parent">
 
-        {jobs.map(function(com){
+        {jobs.map(function(com,idx){  //idx is index which provides a key 
 
-          return <Card company={com.companyName} post={com.post} date={com.datePosted} img={com.brandLogo} pays={com.pay} tag1={com.tag1} tag2={com.tag2} loct={com.location} />
+          return <div key={idx}>
+            <Card company={com.companyName} post={com.post} date={com.datePosted} img={com.brandLogo} pays={com.pay} tag1={com.tag1} tag2={com.tag2} loct={com.location} />
+          </div>
         })}
 
       </div>
